@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.johnny.draglayoutexpand.view.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="70dp"
+    android:layout_gravity="center_vertical"
+    android:minHeight="70dp">
+
+    <com.johnny.draglayoutexpand.view.FrontLayout
+        android:id="@+id/front"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/head_1" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_head"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/point"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/red_bg"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </com.johnny.draglayoutexpand.view.FrontLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_call"
+            android:layout_width="70dp"
+            android:layout_height="fill_parent"
+            android:background="#888888"
+            android:gravity="center"
+            android:text="Call"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/bt_delete"
+            android:layout_width="70dp"
+            android:layout_height="fill_parent"
+            android:background="#ff0000"
+            android:gravity="center"
+            android:text="Delete"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</com.johnny.draglayoutexpand.view.SwipeLayout>

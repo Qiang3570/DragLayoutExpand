@@ -1,0 +1,84 @@
+<com.johnny.draglayoutexpand.view.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dsl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="100dp"
+        android:paddingBottom="40dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="40dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_head_left"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_launcher" />
+
+            <ListView
+                android:id="@+id/lv_left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/iv_head_left"
+                android:cacheColorHint="@android:color/transparent"></ListView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:paddingBottom="80dp"
+        android:paddingTop="80dp"
+        android:scrollbars="none">
+
+        <include layout="@layout/activity_layout_right" />
+
+    </ScrollView>
+
+    <com.johnny.draglayoutexpand.view.DragRelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#dddddd">
+
+        <RelativeLayout
+            android:id="@+id/ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#18B4ED"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher" />
+
+            <ImageView
+                android:id="@+id/iv_head_right"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/btn_right_selector" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll_header" />
+    </com.johnny.draglayoutexpand.view.DragRelativeLayout>
+
+</com.johnny.draglayoutexpand.view.DragLayout>

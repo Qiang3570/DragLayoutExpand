@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#22ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/StyleMenuRight"
+        android:drawableTop="@drawable/conversation_options_qr"
+        android:text="@string/conversation1" />
+
+    <TextView
+        style="@style/StyleMenuRight"
+        android:drawableTop="@drawable/conversation_options_multichat"
+        android:text="@string/conversation2" />
+    <TextView
+        style="@style/StyleMenuRight"
+        android:drawableTop="@drawable/conversation_facetoface_qr"
+        android:text="@string/conversation3" />
+    <TextView
+        style="@style/StyleMenuRight"
+        android:drawableTop="@drawable/conversation_options_multiaudio"
+        android:text="@string/conversation4" />
+    <TextView
+        style="@style/StyleMenuRight"
+        android:drawableTop="@drawable/conversation_options_transferfiles"
+        android:text="@string/conversation5" />
+    <TextView
+        style="@style/StyleMenuRight"
+        android:drawableTop="@drawable/conversation_options_addmember"
+        android:text="@string/conversation6" />
+
+</LinearLayout>

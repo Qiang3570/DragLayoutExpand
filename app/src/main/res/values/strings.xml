@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DraglayoutExpand</string>
+    <string name="conversation1">扫一扫</string>
+    <string name="conversation2">建讨论组</string>
+    <string name="conversation3">面对面</string>
+    <string name="conversation4">多人通话</string>
+    <string name="conversation5">我的电脑</string>
+    <string name="conversation6">加好友</string>
+</resources>
