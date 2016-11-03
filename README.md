@@ -1,9 +1,13 @@
 # DragLayoutExpand
 
-DragLayout的拓展，增加了右侧功能选项，类似与qq，
+基于DragLayout的拓展代码，[DragLayout原有代码](https://github.com/Qiang3570/DragLayout "悬浮显示")
 
-主界面listview新增滑动删除选项，另增加粘性控件，
+  * 新增右侧功能选项
+  
+  * 新增滑动删除
+  
+  * 新增粘性控件
 
-基于https://github.com/Qiang3570/DragLayout的拓展功能
+* 一下是示例图
 
 ![](https://github.com/Qiang3570/DragLayoutExpand/blob/master/sample.gif)
