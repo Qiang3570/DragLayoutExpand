@@ -8,6 +8,6 @@
   
   * 新增粘性控件
 
-* 一下是示例图
+* 以下是示例图
 
 ![](https://github.com/Qiang3570/DragLayoutExpand/blob/master/sample.gif)
